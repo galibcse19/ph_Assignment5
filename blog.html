@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Donate</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+               'custom-green': 'rgb(180, 244, 97)',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="">
+    <!-- header section -->
+    <section class="bg-orange-50 text-black sticky top-0">
+        <div class="lg:flex justify-between lg:px-28  px-6 py-4">
+            <div class="mt-4">
+               <a href="index.html"><button class="btn bg-custom-green px-10 font-bold text-lg ">Home</button></a>
+            </div>
+            <div class="flex items-center lg:my-4 my-6 ">
+                <img src="assets/logo.png" alt=""> 
+                <div class="text-xl font-bold ml-4">Donate Bangladesh</div>
+            </div>
+            <div class="flex items-center">
+              <img src="assets/coin.png" alt="">
+              <p class="text-xl font-bold ml-4"><span class="mr-2">5050</span>BDT</p>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ section -->
+    <section class="lg:px-28  px-6 py-4">
+        <h2 class="text-4xl font-bold my-6">Important FAQ</h2>
+        <div class="collapse collapse-arrow border border-gray-300">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model(DOM)?</div>
+            <div class="collapse-content">
+              <p>The Document Object Model (DOM) is a programming interface that represents an HTML or XML document as a structured tree of objects. It allows developers to manipulate the document's structure, style, and content using JavaScript.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow border border-gray-300 my-4">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p>We can select an element from the DOM using methods like document.getElementById('id') or document.querySelector('.class'). These allow you to access and manipulate elements by ID, class, or tag.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow border border-gray-300">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM and Why is it useful?</div>
+            <div class="collapse-content">
+              <p>Event delegation is a technique where a single event listener on a parent element manages events for multiple child elements through event bubbling.Event delegation is useful because it enhances performance by reducing the number of event listeners attached to individual elements, saving memory.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow border border-gray-300 my-4">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>We can manipulate an element's attributes using methods like setAttribute('attrName', 'value') to set an attribute and getAttribute('attrName') to retrieve it. For styles, you can directly modify the style property, like element.style.color = 'red' to change text color. Additionally, you can use classList.add('className') or classList.remove('className') to manage CSS classes.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
